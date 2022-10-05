@@ -1,10 +1,10 @@
-#include<stdio.h>
-int main()
-{
-	char c[101];
-	while(scanf("%[^\n]s",c)!=EOF){
-		printf("%s\n",c);
-        getchar();
+#include <stdio.h>
+
+int main() {
+	char str;
+
+	while (scanf("%c", &str) != EOF)
+	{
+		printf("%c", str);
 	}
-	return 0;
 }
