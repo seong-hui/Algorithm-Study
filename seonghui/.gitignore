@@ -1,4 +1,0 @@
-*.exe
-*.ini
-.vscode/*
-!.vscode/tasks.json
