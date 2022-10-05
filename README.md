@@ -27,7 +27,7 @@
     <td align="center">
       <a href="https://github.com/blissey2">
         <img src="https://avatars.githubusercontent.com/u/48528072?v=4" width="100px;" alt="blissey2"/><br />
-        <sub><b>bbx8216</b><br></sub>
+        <sub><b>blissey2</b><br></sub>
       </a>
     </td>
   </tr>
