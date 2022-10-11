@@ -24,7 +24,7 @@ int main()
         prime_num(a, m);
         for(int j = m/2; j>0; j--)
         {
-            printf("[%d %d %d]\n", j, m-j, a[j]+a[m-j]);
+            //printf("[%d %d %d]\n", j, m-j, a[j]+a[m-j]);
             if(a[j]==0 && a[m-j] == 0)
             {
                 printf("%d %d\n", j, m-j);
