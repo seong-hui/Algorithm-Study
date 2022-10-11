@@ -15,7 +15,7 @@ void back(int a[], int idx, int n, int m)
     {
         for (i = 1; i <= n; i++)
         {
-            if(check[i]==1)
+            if (check[i] == 1)
                 continue;
             else
             {
