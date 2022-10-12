@@ -15,27 +15,21 @@ void prime_num(int n)
 
 int main()
 {
-    int n = 1, cnt = 0;
+    int n, m, cnt;
     a[1] = 1;
-    prime_num(n);
-    while (n != 0)
+    a[0] = 1;
+    scanf("%d", &m);
+    prime_num(m);
+    for (int i = 0; i < m; i++)
     {
         scanf("%d", &n);
         cnt = 0;
-        for (int i = 2; i <= n; i++)
+        for (int i = n / 2; i > 0; i--)
         {
             if (a[i] == 0 && a[n - i] == 0)
-            {
-                printf("%d = %d + %d\n", n, i, n - i);
                 cnt++;
-                break;
-            }
         }
-        if (n != 0 && cnt == 0)
-        {
-            printf("Goldbach's conjecture is wrong.\n");
-            continue;
-        }
+        printf("%d\n", cnt);
     }
     return 0;
 }
