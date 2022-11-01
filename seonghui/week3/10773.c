@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define max 10000
+#define max 1000000
 int stack[max];
 int idx = 0;
 
@@ -10,23 +10,15 @@ void push(int m)
     stack[idx++] = m;
 }
 
-void empty()
-{
-    if (idx == 0)
-        printf("%d\n", 1);
-    else
-        printf("%d\n", 0);
-}
-
 void pop()
 {
-    if (idx != 0)
-        stack[--idx] = 0;
+    idx--;
 }
 
 int main()
 {
-    int n, m, sum=0;
+    int n, m;
+    long long sum=0;
     char a[10];
 
     scanf("%d", &n);
@@ -43,6 +35,5 @@ int main()
     {
         sum += stack[i];
     }
-    printf("[%d]\n", sum);
-
+    printf("%ld\n", sum);
 }
