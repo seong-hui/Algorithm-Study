@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define max 10000
+#define max 2000001
 int queue[max];
 int idx = 0;
 
@@ -12,8 +12,9 @@ void push(int m)
 
 void set()
 {
-    for (int i = 0; i < idx; i++)
-        queue[i] = queue[i + 1];
+    for(int i= 0;i<idx;i++)
+        queue[i] = queue[i+1];
+
 }
 
 void empty()
@@ -38,11 +39,12 @@ void pop()
 
 void front()
 {
-    if (idx != 0)
+     if (idx != 0)
         printf("%d\n", queue[0]);
     else
         printf("-1\n");
 }
+
 
 void size()
 {
@@ -54,7 +56,7 @@ void back()
 
     if (idx != 0)
     {
-        printf("%d\n", queue[idx - 1]);
+        printf("%d\n", queue[idx-1]);
     }
     else
         printf("-1\n");

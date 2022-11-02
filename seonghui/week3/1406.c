@@ -33,7 +33,18 @@ void B()
 
 void P(char m)
 {
-    stack[idx] = m;
+    int i = 0;
+    while (stack[i])
+        i++;
+    
+    if(i==idx)
+        stack[idx] = m;
+    else
+    {
+        for(int j=idx+1;j<i;j++)
+            stack[j] = stack[j+1];
+    }
+    
     idx++;
     printf("%s %d\n", stack, idx);
 }
