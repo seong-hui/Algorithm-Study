@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define max 2000001
+#define max 2000010
 int queue[max];
 int idx = 0;
 
