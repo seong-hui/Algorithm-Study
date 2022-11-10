@@ -6,7 +6,7 @@ typedef struct bj
     char name[101];
 } bj;
 
-bj sign[100001];
+bj sign[100002];
 
 int main()
 {
