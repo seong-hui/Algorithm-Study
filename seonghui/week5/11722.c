@@ -6,7 +6,7 @@ int a[1001];
 int increase(int n)
 {
     int max = 1;
-    for (int i = 0; i < n; i++) // 1~n까지 수열 전체 도는 반복문
+    for (int i = 0; i < n; i++) // /1~n까지 수열 전체 도는 반복문
     {
         dp[i] = 1;
         for (int j = 0; j < i; j++) // 0 ~ i-1까지 돌면서 i앞에 있는 모든 수열을 도는 반복문
